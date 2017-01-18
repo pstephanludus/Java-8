@@ -39,7 +39,8 @@ public class J_Composants_Texte extends JFrame{
 	public static void main(String[] args){
 		J_Composants_Texte jct = new J_Composants_Texte();
 		JTextArea jta = new JTextArea();
-		jct.getContentPane().add(jta, BorderLayout.CENTER);
+		JScrollPane jspText = new JScrollPane(jta);
+		jct.getContentPane().add(jspText, BorderLayout.CENTER);
 		
 		/* JTextArea avec les options par défaut.
 		 * On remarque que le wordwrap n'est pas automatique, les lignes trop longues ne revenienent pas automatiquement à la ligne (On peut cependant revenir à la ligne manuellement en utilisant la touche entrée)
